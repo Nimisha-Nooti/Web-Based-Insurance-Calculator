@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insurance Calculator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Insurance Cost Calculator</h1>
+        <form id="insurance-form">
+            <label>Age: <input type="number" name="age" required></label>
+            <label>Annual Income: <input type="number" name="income" required></label>
+            <label>Insurance Type:
+                <select name="insuranceType">
+                    <option value="medical">Medical</option>
+                    <option value="term">Term Life</option>
+                    <option value="vehicle">Vehicle</option>
+                    <option value="business">Business</option>
+                </select>
+            </label>
+            <label>Health Condition:
+                <select name="healthCondition">
+                    <option value="excellent">Excellent</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                </select>
+            </label>
+            <label>Coverage Amount ($): <input type="number" name="coverage" required></label>
+            <button type="submit">Calculate Premium</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
